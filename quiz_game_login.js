@@ -7,6 +7,16 @@ function addUser(){
    
     window.location="quiz_game_page.html";
 }
+player1Name=localStorage.getItem("Player1");
+player2Name=localStorage.getItem("Player2");
+player1Score=0;
+player2Score=0;
+document.getElementById("player1_name").innerHTML=player1Name+" : ";
+document.getElementById("player2_name").innerHTML=player2Name+" : ";
+document.getElementById("player1_score").innerHTML=player1Score;
+document.getElementById("player2_score").innerHTML=player2Score;
+document.getElementById("question").innerHTML=player1Name;
+document.getElementById("answer").innerHTML=player2Name;
 function send(){
     number1=document.getElementById("number1").value;
     number2=document.getElementById("number2").value;
